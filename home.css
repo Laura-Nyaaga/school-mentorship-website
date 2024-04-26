@@ -1,0 +1,43 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    border: 1px solid;
+    background-color: rgb(20, 19, 29);
+}
+#aa{
+    text-decoration: none;
+    color: white;
+}
+section{
+    margin-top: -80px;
+}
+h3{
+    font-size: 160px;
+}
+#assist{
+    font-size: 80px;
+    text-align: center;
+    margin-top: -50px;
+}
+footer{
+    background-color: rgb(20, 19, 29);
+    color: white;
+    text-align: center;
+}
+#contacts{
+    display: flex;
+    justify-content: space-evenly;
+}
+#socials{
+    text-decoration: none;
+    color: white;
+}
+#already{
+    font-size: 100px;
+    text-align: center;
+}
+#pictures{
+    display: flex;
+    padding-left: 250px;
+}

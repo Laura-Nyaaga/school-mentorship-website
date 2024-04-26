@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 10%; 
+    /* margin: 55px; */
+}
+#input{
+    border: double 2px rgb(47, 197, 235);
+    width: 80%;
+    height: 60px;
+}
+#agree{
+    display: flex;
+    padding-left: 10%;
+}
+#sign{
+   background-color:  rgb(47, 197, 235);
+   width: 100px;
+   height: 40px;
+   border: none;
+   color: white;
+   font:200;
+   margin-left: 40px;
+   /* border-radius: 10px; */
+}
+label{
+    /* padding-left: 20%; */
+    font-size: 200%;
+}
+h2{
+    font-size: 80px;
+}
+p{
+    font-size: 50px;
+}
+
+@media all and (min-width: 280px) and (max-width: 1024px) {
+    body{
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 10%; 
+        /* margin: 55px; */
+        font-size: small;
+    }  
+}

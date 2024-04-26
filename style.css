@@ -1,0 +1,93 @@
+/* body{
+    padding-left: 50px;
+    padding-right: 50px;
+} */
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    border: 1px solid;
+    background-color: rgb(20, 19, 29);
+}
+#navbar{
+    text-decoration: none;
+    color: white;
+}
+section{
+    margin-top: -80px;
+}
+h3{
+    font-size: 180px;
+}
+#assist{
+    font-size: 80px;
+    text-align: center;
+    margin-top: -50px;
+}
+#mentor{
+    width: 130vh;
+    height: 60vh;
+    padding-left: 40px;
+}
+.signlink{
+    text-decoration: none;
+    color: rgb(17, 171, 231);
+}
+#already{
+    font-size: 100px;
+    text-align: center;
+}
+.already{
+    font-size: 40px;
+    text-align: center;
+    margin-top: -20px;
+}
+footer{
+    background-color: rgb(20, 19, 29);
+    color: white;
+    text-align: center;
+}
+#contacts{
+    display: flex;
+    justify-content: space-evenly;
+}
+#socials{
+    text-decoration: none;
+    color: white;
+}
+@media all and (min-width:280px) and (max-width:1024px){
+    nav{
+        flex-wrap: wrap;
+        font-size: 70%;
+    }
+    h3{
+        font-size: 50px;
+        margin-top: 120px;
+    }
+    #assist{
+        font-size: 20px;
+    }
+    #mentor{
+        width: 40vh;
+        height: 30vh;
+        padding-left: 10px;
+    }
+    #already{
+        font-size: 20px;
+        text-align: center;
+    }
+    .already{
+        font-size: 10px;
+        text-align: center;
+        margin-top: -20px;
+    }
+    #contacts{
+        flex-wrap: wrap;
+    }
+    #socials{
+        font-size: 10px;
+    }
+    #icons{
+        width: 20px;
+    }
+}
