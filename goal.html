@@ -14,42 +14,41 @@
         <p><a id="aa" href="http://127.0.0.1:5500/achieve.html"><strong>Achievement</strong></a></p>
     </nav>
     <section>
-        <h3><strong>My Goals</strong><br>A life With Goals Is Considered A Successful Life</h3>
-    <div>
-        <input id="checkboxx" type="checkbox">
-        <input id="input" type="text">
-    </div><br><br>
-    <div>
-        <input id="checkboxx" type="checkbox">
-        <input id="input" type="text">
-    </div><br><br>
-    <div>
-        <input id="checkboxx" type="checkbox">
-        <input id="input" type="text">
-    </div><br><br>
-    <div>
-        <input id="checkboxx" type="checkbox">
-        <input id="input" type="text"></div><br><br>
-    <div>
-        <input id="checkboxx" type="checkbox">
-        <input id="input" type="text"></div><br><br>
-    <div>
-        <input id="checkboxx" type="checkbox">
-        <input id="input" type="text"></div><br><br>
-    <div>
-        <input id="checkboxx" type="checkbox">
-        <input id="input" type="text"></div><br><br>
-    <div>
-        <a href="http://127.0.0.1:5500/goal.html"><button id="add" onclick="add">Add</button></a>
-    </div>
-    </section> 
-    <footer>
-        <p>www.c-connect.com</p>
-        <div id="contacts">
-            <p><a id="socials" href="https://www.google.com/"><img src="/pictures/google.png" alt="Google">M-connect.com</a></p>
-            <p><a id="socials" href="https://www.facebook.com/"><img src="/pictures/facebook.png" alt="Facebook">M-Connect</a></p>
-            <p><a id="socials" href="https://twitter.com/"><img src="/pictures/twitter.png" alt="Twitter">@m-connect.com</a></p>
-        </div>
-    </footer>
+        <h3><strong>My Goals</strong><br>A Life With Goals Is A Successful Life</h3>
+
+            <h1>Goals</h1>
+            <input type="text" id="new-task" placeholder="Write Here">
+            <button id="add-task">Add Goal</button>
+            <ul id="todo-list"></ul>
+            <script>
+              const todoList = document.getElementById('todo-list');
+              const newTaskInput = document.getElementById('new-task');
+              const addTaskButton = document.getElementById('add-task');
+              const tasks = []; // Array to store tasks
+              addTaskButton.addEventListener('click', function() {
+                const task = newTaskInput.value.trim(); // Get task text and trim whitespace
+                if (task) { // Check if task is not empty
+                  tasks.push(task);
+                  newTaskInput.value = ''; // Clear input field
+                  renderTodoList();
+                }
+              });
+              function renderTodoList() {
+                todoList.innerHTML = ''; // Clear existing list items
+                tasks.forEach((task, index) => {
+                  const listItem = document.createElement('li');
+                  listItem.innerText = task;
+                  const deleteButton = document.createElement('button');
+                  deleteButton.innerText = 'Delete';
+                  deleteButton.addEventListener('click', function() {
+                    tasks.splice(index, 1); // Remove task from array
+                    renderTodoList();
+                  });
+                  listItem.appendChild(deleteButton);
+                  todoList.appendChild(listItem);
+                });
+              }
+            </script>
+</section>  
 </body>
 </html>

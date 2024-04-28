@@ -1,3 +1,6 @@
+body{
+    background-color: blueviolet;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -12,16 +15,9 @@ nav{
 h3{
     font-size: 50px;
 }
-#checkboxx{
-position: absolute;
-margin-top: 20px;
-margin-left: 5px;
-border: double 1px rgb(47, 197, 235);
-}
-#input{
+input{
     border: double 2px rgb(47, 197, 235);
-    /* color: rgb(135, 206, 235); */
-    width: 90%;
+    width: 60%;
     height: 60px;
 }
 button{
@@ -30,25 +26,34 @@ button{
     height: 40px;
     border: none;
     color: white;
-    font:200;
-    margin-left: 100px;
-}
-footer{
-    background-color: rgb(20, 19, 29);
-    color: white;
-    text-align: center;
-}
-#contacts{
-    display: flex;
-    justify-content: space-evenly;
-}
-#socials{
-    text-decoration: none;
-    color: white;
 }
 #add{
   margin-left: 40%;
 }
 section{
-   padding-left: 50px;
+   padding-left: 300px;
+   padding-top: 80px;
+   padding-bottom: 200px;
+}
+@media all and (min-width:280px) and (max-width:1024px){
+    nav{
+        flex-wrap: wrap;
+        font-size: 30%;
+    }
+    h3{
+        font-size: 20px;
+    }
+    input{
+        border: double 2px rgb(47, 197, 235);
+        width: 80%;
+        height: 60px;
+    }
+    #add{
+        margin-left: 5%;
+      }
+      section{
+        padding-left: 70px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+     }
 }
