@@ -20,6 +20,14 @@ input{
     width: 60%;
     height: 60px;
 }
+#check{
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: -30px;
+}
+div{
+   display: flex; 
+}
 button{
     background-color:  rgb(47, 197, 235);
     width: 100px;
